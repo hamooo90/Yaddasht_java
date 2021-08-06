@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#008577</color>-->
+<!--    <color name="colorPrimaryDark">#00574B</color>-->
+<!--    <color name="colorAccent">#D81B60</color>-->
+    <color name="colorPrimary">#37474f</color>
+    <color name="colorAccent">#62727b</color>
+    <color name="colorPrimaryDark">#222222</color>
+    <color name="secondaryColor">#f3e5f5</color>
+    <color name="secondaryLightColor">#ffffff</color>
+    <color name="secondaryDarkColor">#c0b3c2</color>
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#000000</color>
+
+    <color name="darkButton">#373737</color>
+    <color name="whiteButton">#BCBCBC</color>
+
+    <color name="snackLight">#A5A5A5</color>
+
+
+
+
+
+
+    <!--    pallet color-->
+    <color name="pallet1">#222222</color>
+    <color name="pallet2">#5A2B2B</color>
+    <color name="pallet3">#604A1C</color>
+    <color name="pallet4">#635C1C</color>
+    <color name="pallet5">#355922</color>
+    <color name="pallet6">#14504A</color>
+    <color name="pallet7">#2E555D</color>
+    <color name="pallet8">#1C3A5D</color>
+    <color name="pallet9">#422B5D</color>
+    <color name="pallet10">#5A2244</color>
+
+
+    <color name="yellowB">#fbbc00   </color>
+
+    <color name="redDialogNeut">#F4584D   </color>
+
+
+</resources>

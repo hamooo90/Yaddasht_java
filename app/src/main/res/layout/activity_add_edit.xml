@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_edit_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pallet1"
+    tools:context="ir.yaddasht.yaddasht.view.AddEditActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pallet1"
+        android:elevation="1dp"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        app:navigationIcon="@drawable/ic_back_rtl"
+        app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp">
+
+        <LinearLayout
+            android:id="@+id/fr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_style"
+                android:hint="موضوع"
+                android:inputType="textMultiLine"
+                android:textColor="#ffffff"
+                android:textColorHint="#9e9e9e"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:hint="متن"
+                android:inputType="textMultiLine"
+                android:textColor="#ffffff"
+                android:textColorHint="#9e9e9e" />
+
+            <LinearLayout
+                android:id="@+id/check_list_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/new_checklist_line_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="مورد جدید"
+                    android:background="@android:color/transparent"
+                    android:drawableRight="@drawable/ic_add"
+                    android:paddingStart="3dp"/>
+
+                <LinearLayout
+                    android:id="@+id/checklist_inner_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/alert_view_root"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                app:cardBackgroundColor="#ccc8cc"
+                app:cardCornerRadius="8dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/alert_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    app:cardCornerRadius="7dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/alert_view_image"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="5dp"
+
+                            android:src="@drawable/ic_alarm"
+                            android:layout_gravity="center_vertical"/>
+
+                        <TextView
+                            android:id="@+id/alert_view_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="Today 22:00"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Adding bottom sheet after main content -->
+    <include layout="@layout/add_edit_bottom_sheet_left" />
+
+    <include layout="@layout/add_edit_bottom_sheet_right" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/add_edit_bottom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:background="@color/pallet1"
+        android:elevation="4dp"
+        android:windowActionBarOverlay="true"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/btm1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_more"
+                android:background="?attr/selectableItemBackground"
+                android:padding="10dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/text_view_bottom_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/btm2"
+                android:clickable="true"
+                android:background="?attr/selectableItemBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_more"
+                android:focusable="true" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--    <com.google.android.material.bottomappbar.BottomAppBar-->
+    <!--        android:id="@+id/bab"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="bottom"-->
+    <!--        android:backgroundTint="@color/colorPrimary"-->
+    <!--        app:hideOnScroll="false"-->
+    <!--        app:layout_scrollFlags="scroll|enterAlways"-->
+    <!--        />-->
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
