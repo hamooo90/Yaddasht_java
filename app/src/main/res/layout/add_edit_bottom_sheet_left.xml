@@ -9,7 +9,7 @@
     android:elevation="0dp"
     app:behavior_hideable="true"
     app:behavior_peekHeight="0dp"
-    app:layout_behavior="ir.yaddasht.yaddasht.AutoCloseBottomSheetBehavior">
+    app:layout_behavior="ir.yaddasht.yaddasht.view.behaviour.AutoCloseBottomSheetBehavior"">
 
     <View
         android:layout_width="match_parent"
