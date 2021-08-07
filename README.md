@@ -12,5 +12,17 @@ Rest api is written in node.js and located in remote server. The data that is re
 - Synched note accessibe in multiple device
 - Add check list and tick items
 - Add alarm and get notification at specific time
+- Search in notes
 - persian calendar date picker
-- Push notification with [Najva](https://www.najva.com "Najva")
+- Push notification 
+- Pin your notes to top of the list
+- Customize your notes with different colors
+- Barcode Scanner
+
+## Screenshots
+
+<img src="/image.jpg"/>
+
+## Download
+This app is published in cafebazaar.ir and can be downloaded from the link below  
+    [Download Yaddasht](https://cafebazaar.ir/app/ir.yaddasht.yaddasht)
