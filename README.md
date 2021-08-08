@@ -22,7 +22,7 @@ Rest api is written in node.js and located in remote server. The data that is re
 
 ## Screenshots
 
-<img src="/image.jpg"/>
+<img src="/preview.jpg"/>
 
 ## Download
 This app is published in cafebazaar.ir and can be downloaded from the link below  
