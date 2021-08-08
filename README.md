@@ -48,7 +48,7 @@ This app is published in cafebazaar.ir and can be downloaded from the link below
 
 ## Upcoming feature
 - Add image
-- Voce memo
+- Voice memo
 - Responsive design for tablet
 
 # Licence
